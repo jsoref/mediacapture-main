@@ -49,6 +49,9 @@
     <section id="conformance">
       <p>This specification defines conformance criteria that apply to a
       single product: the <dfn>user agent</dfn> that implements the interfaces
+<p class="error">
+<h1> You write "user agent" in lowercase here (as a dfn). </h1>
+</p>
       that it contains.</p>
 
       <p>Conformance requirements phrased as algorithms or specific steps may
@@ -214,6 +217,9 @@
 
           <p>A correspondingly-named constraint exists for each corresponding
           source setting name and capability name. In general, user agents
+<p class="error">
+You use user agents here
+</p>
           will have more flexibility to optimize the media streaming
           experience the fewer constraints are applied, so application authors
           are strongly encouraged to use mandatory constraints sparingly.</p>
@@ -2941,6 +2947,9 @@ I'm assuming it's just an awkward way of writing "remote client".
 
         <p>The <code>getSupportedConstraints</code> method is provided to
         allow the application to determine which constraints the User Agent
+<p class="error">
+You use User Agent here
+</p>
         recognizes.</p>
 
         <dl class="idl" title="partial interface MediaDevices">
@@ -4154,6 +4163,9 @@ var gotten = navigator.mediaDevices.getUserMedia({"video": {
         value depends on the type of the property.</p>
 
         <p>A conforming user-agent <em class="rfc2119"
+<p class="error">
+You use user-agent here
+</p>
         title="must">must</em> support all the setting names defined in this
         spec.</p>
 
