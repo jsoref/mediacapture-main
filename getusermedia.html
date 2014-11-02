@@ -110,6 +110,24 @@
           track. The source is the broadcaster of the media itself. A source
           can be a physical webcam, microphone, local video or audio file from
           the user's hard drive, network resource, or static image.</p>
+<section class="awkward">
+<h1> It's very hard to parse this thought, even though in theory it's simple, and in theory it's all OR and thus doesn't matter. </h1>
+<ul>
+<li>[webcam, microphone, local video, local audio, network resource, static image].or()</li>
+<li>[webcam, microphone, [local [video, audio].or() from the user's harddrive], network resource, static image].or()</li>
+<li>[webcam, microphone, [video, audio].or() [local from user's harddrive, network resoruce].or(), static image].or()</li>
+</ul>
+<p>Specifically, my grammar system wants to insert an "a" before "static".</p>
+<p>
+I think I'd suggest:</p>
+<tt>
+network resource, physical device (webcam/microphone), local file (video, audio, image), or a static image.
+</tt>
+<p>
+But one thing I can't tell is whether static image wants to be with local file, can i do a local image file, or can i only do an generated static image?
+</p>
+
+</section>
 
           <p>Other than the source identifier (defined in
             <code><a>MediaDeviceInfo</a>.deviceId</code>),
