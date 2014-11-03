@@ -522,6 +522,14 @@ You use user agents here
         task source for this <span title="concept-task">task</span> is the
         user interaction task source. Otherwise the task source for this <span
         title="concept-task">task</span> is the networking task source.</p>
+<section class="issue">
+<h1> Programmatic stream changes... </h1>
+<p>
+If I have a MediaStream with 0 active Tracks,
+and I take an active Track from another stream and programmatically add it to the stream,
+I presume it will change its status to active, but is the task source really networking?
+</p>
+</section>
 
         <dl class="idl" title="interface MediaStream : EventTarget">
           <dt>Constructor()</dt>
