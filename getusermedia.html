@@ -397,6 +397,9 @@ You use user agents here
             <p>Initialize <var>stream's</var> <code>
                 <a href="#dom-mediastream-id">id</a>
               </code> attribute to a newly generated value.</p>
+<section class="underspecified">
+<h1> is there an algorithm that defines newly-generated-value to be distinct w/in some scope? </h1>
+</section>
           </li>
 
           <li>
@@ -434,6 +437,11 @@ You use user agents here
 
                 <p>Run the sub steps labeled <em>Add track</em> (above) for
                 every <code>
+<section class="bug">
+<h1>Only one of the two substeps above is labeled "Add track". This probably doesn't do what you want</h1>
+
+<p>You should probably define a subroutine first that takes a track and stream and then call it for both cases...</p>
+</section>
                     <a>MediaStreamTrack</a>
                   </code> in the argument stream's <a href="#track-set">track
                 set</a>.</p>
