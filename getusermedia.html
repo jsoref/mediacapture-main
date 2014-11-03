@@ -638,6 +638,13 @@ I presume it will change its status to active, but is the task source really net
                 <a>MediaStreamTrack</a>
               </code> object in this stream's <a href="#track-set">track
             set</a> whose <code>
+<section class="bug">
+<h1> first is undefined. </h1>
+<p>
+Everything else talks about order not mattering.
+This implies order matters.
+</p>
+</section>
                 <a href="#dom-mediastreamtrack-id">id</a>
               </code> is equal to <var>trackId</var>. The method MUST return
             null if no track matches the <var>trackId</var> argument.</p>
